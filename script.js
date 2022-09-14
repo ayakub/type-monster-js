@@ -35,7 +35,7 @@ const typeController = (e) => {
 
   // if it is not a valid character like Control/Alt then skip displaying anything
   if (!validLetters.includes(newLetter)) {
-    return errorCount++
+    return errorCount++;
   }
 
   userText += newLetter;
@@ -68,6 +68,7 @@ const gameOver = () => {
   // so total time taken is current time - start time
   const finishTime = new Date().getTime();
   const timeTaken = (finishTime - startTime) / 1000;
+  const timeInt = parseInt(timeTaken)
 
   // show result modal
   resultModal.innerHTML = "";
@@ -82,8 +83,8 @@ const gameOver = () => {
       <div class="modal-style">
       <div>
       <h1>Finished!</h1>
-      <p>You took: <span class="bold">${timeTaken}</span> seconds</p>
-      <p>You made <span class="bold red">${errorCount}</ span> mistakes</p>
+      <p>You took: <span class="bold">${timeInt}</span> seconds</p>
+      <p>You made <span class="bold red">${errorCount++}</ span> mistakes</p>
        <button onclick="closeModal()">Close</button>
       </div>
       </div>
@@ -93,7 +94,7 @@ const gameOver = () => {
 
   // restart everything
   startTime = null;
-  errorCount = 0;
+  errorCount = errorCount++;
   userText = "";
   display.classList.add("inactive");
 };

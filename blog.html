@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <main class="container mt-5">
+        <div>
+            <div>
+                <h2>Difference Between Local Storage, Session</h2>
+                <p><strong>Local Storage:</strong> This read-only interface property provides access to the
+                    Document's local storage
+                    object, the stored data is stored across browser sessions. Similar to sessionStorage, except
+                    that localStorage data gets cleared when the page session ends that is when the page is
+                    closed. It is cleared when the last "private" tab of a browser is closed (localStorage data for
+                    a document loaded in a private browsing or incognito session).</p>
+                <p><strong>Session Storage:</strong> Session Storage objects can be accessed using the
+                    sessionStorage read-only property. The difference between sessionStorage and localStorage is
+                    that localStorage data does not expire, whereas sessionStorage data is cleared when the page
+                    session ends.
+
+                    A unique page session gets created once a document is loaded in a browser tab. Page sessions are
+                    valid for only one tab at a time. Pages are only saved for the amount of time that the tab or
+                    the browser is open; they do not persist after the page reloads and restores. A new session is
+                    created each time a tab or window is opened; this is different from session cookies.</p>
+            </div>
+            <div>
+                <h2>Differences Between Local Scope and Global Scope</h2>
+                <p><strong>Global scope </strong>Global scope contains all of the things defined outside of all code
+                    blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement,
+                    loops, function are examples of structure that create a code block. A global variable has global
+                    scope. A global variable is accessible from anywhere in the code.</p>
+                <p><strong>Local Scope</strong> Local scope contains things defined inside code blocks. A local variable
+                    has local scope.
+                    A local variable is only accessible where it's declared.
+                </p>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </main>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
